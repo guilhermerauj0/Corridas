@@ -2,14 +2,18 @@ package com.coldrosemob.corridas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.coldrosemob.corridas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private var adapter: RaceAdapter? = null
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         var raceList = mutableListOf(
             Race("Moto taxi"
@@ -41,8 +45,10 @@ class MainActivity : AppCompatActivity() {
                 , "25 de setembro de 2022"),
         )
 
-        adapter = RaceAdapter(raceList)
-        main_rv_race.
+        val adapter = RaceAdapter(raceList)
+        binding.mainRvRace.adapter = adapter
+        binding.mainRvRace.layoutManager = LinearLayoutManager(this)
+
 
     }
 }
