@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         binding.mainRvRace.layoutManager = LinearLayoutManager(this)
 
         binding.fabAddRace.setOnClickListener {
+            adapter.notifyDataSetChanged()
             Toast.makeText(this, "Vc clicou para criar um registro", Toast.LENGTH_SHORT).show()
             adapter.notifyItemInserted(raceList.size - 1)
         }

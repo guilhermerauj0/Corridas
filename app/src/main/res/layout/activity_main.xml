@@ -97,7 +97,7 @@
             app:fabAnimationMode="slide"
             app:fabAlignmentMode="center"
             android:layout_gravity="bottom"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/bluesecundario"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
