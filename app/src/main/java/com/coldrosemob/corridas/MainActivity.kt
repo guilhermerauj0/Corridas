@@ -2,6 +2,7 @@ package com.coldrosemob.corridas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.coldrosemob.corridas.databinding.ActivityMainBinding
 
@@ -49,6 +50,9 @@ class MainActivity : AppCompatActivity() {
         binding.mainRvRace.adapter = adapter
         binding.mainRvRace.layoutManager = LinearLayoutManager(this)
 
-
+        binding.fabAddRace.setOnClickListener {
+            Toast.makeText(this, "Vc clicou para criar um registro", Toast.LENGTH_SHORT).show()
+            adapter.notifyItemInserted(raceList.size - 1)
+        }
     }
 }
