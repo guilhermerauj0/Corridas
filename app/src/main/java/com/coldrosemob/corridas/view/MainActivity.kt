@@ -1,9 +1,11 @@
-package com.coldrosemob.corridas
+package com.coldrosemob.corridas.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.coldrosemob.corridas.model.Race
+import com.coldrosemob.corridas.viewmodel.RaceAdapter
 import com.coldrosemob.corridas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

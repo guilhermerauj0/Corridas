@@ -1,11 +1,10 @@
-package com.coldrosemob.corridas
+package com.coldrosemob.corridas.viewmodel
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
+import com.coldrosemob.corridas.model.Race
 import com.coldrosemob.corridas.databinding.RaceInfoBinding
 
 class RaceAdapter(private var raceList: List<Race>) : RecyclerView.Adapter<RaceAdapter.RaceViewHolder>() {

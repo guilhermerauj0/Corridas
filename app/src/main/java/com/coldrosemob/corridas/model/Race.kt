@@ -1,4 +1,4 @@
-package com.coldrosemob.corridas
+package com.coldrosemob.corridas.model
 
 class Race(
     val vehicle: String,
