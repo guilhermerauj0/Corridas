@@ -19,11 +19,19 @@ class RaceAdapter(private var raceList: List<Race>) : RecyclerView.Adapter<RaceA
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: RaceViewHolder, position: Int) {
+        for (totalPrice in 0..raceList.size){
+            (totalPrice + raceList[position].price)
+        }
+
         holder.binding.apply {
             raceVehicle.text = raceList[position].vehicle
             raceDate.text = raceList[position].date
             racePrice.text = "R$${raceList[position].price}"
+
         }
+
+
+
     }
 
     override fun getItemCount(): Int = raceList.size
