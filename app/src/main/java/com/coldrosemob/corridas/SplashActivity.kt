@@ -1,33 +1,40 @@
 package com.coldrosemob.corridas
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.WindowManager
+import android.view.animation.AnimationUtils
+import com.coldrosemob.corridas.databinding.ActivitySplashBinding
 import com.coldrosemob.corridas.view.MainActivity
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     companion object{
-        private const val SPLASHTIME = 2000L
+        private const val SPLASHTIME = 3000L
     }
+
+    private lateinit var binding : ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        binding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
-
+        // TIME OF SPLASH SCREEN IN SCREEN
         Handler(Looper.myLooper()!!).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
 
-        }, SPLASHTIME)
+        }, 3000)
+
+        // ANIMATION OF TITLE IN SPLASH SCREEN
+        val fadeInAnim = AnimationUtils.loadAnimation(this, R.anim.fade_in_anim)
+
+        binding.llTitleapp.animation = fadeInAnim
 
     }
 }

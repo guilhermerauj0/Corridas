@@ -10,22 +10,27 @@
     android:background="@color/blueprincipal"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/ll_titleapp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Corridas!"
-        android:fontFamily="@font/montserratbold"
-        android:textColor="@color/whitesecundary"
-        android:textSize="48dp"/>
+        android:orientation="vertical"
+        android:gravity="center">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Organize suas corridas!"
-        android:fontFamily="@font/montserratregular"
-        android:textColor="@color/whitesecundary"
-        android:textSize="18dp"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corridas!"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/whitesecundary"
+            android:textSize="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organize suas corridas!"
+            android:fontFamily="@font/montserratregular"
+            android:textColor="@color/whitesecundary"
+            android:textSize="18dp"/>
+    </LinearLayout>
 
 </LinearLayout>
