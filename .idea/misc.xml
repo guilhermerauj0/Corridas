@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.186" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1805" />
+        <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable/ic_info.xml" value="0.281" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable/ic_launcher_background.xml" value="0.186" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable/ic_settings.xml" value="0.186" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/drawable/rectangle_curved20.xml" value="0.22205128205128205" />
@@ -12,7 +13,7 @@
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/layout/corridas_info.xml" value="0.37083333333333335" />
-        <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/layout/race_info.xml" value="0.25" />
+        <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/layout/race_info.xml" value="0.17659137577002054" />
         <entry key="..\:/programacao/projetos/mobile/corridas/app/src/main/res/menu/menu_bottomappbar.xml" value="0.37083333333333335" />
       </map>
     </option>
