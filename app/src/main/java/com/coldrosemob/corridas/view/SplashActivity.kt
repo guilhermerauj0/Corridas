@@ -1,4 +1,4 @@
-package com.coldrosemob.corridas
+package com.coldrosemob.corridas.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
+import com.coldrosemob.corridas.R
 import com.coldrosemob.corridas.databinding.ActivitySplashBinding
-import com.coldrosemob.corridas.view.MainActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

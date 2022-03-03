@@ -8,7 +8,7 @@
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
     android:orientation="vertical"
     android:background="@color/blueprincipal"
-    tools:context=".SplashActivity">
+    tools:context=".view.SplashActivity">
 
     <LinearLayout
         android:id="@+id/ll_titleapp"
