@@ -1,8 +1,8 @@
 package com.coldrosemob.corridas.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.coldrosemob.corridas.model.Race
 import com.coldrosemob.corridas.viewmodel.RaceAdapter
@@ -54,11 +54,11 @@ class MainActivity : AppCompatActivity() {
         val adapter = RaceAdapter(raceList)
         binding.mainRvRace.adapter = adapter
         binding.mainRvRace.layoutManager = LinearLayoutManager(this)
+        adapter.notifyDataSetChanged()
 
         binding.fabAddRace.setOnClickListener {
-            adapter.notifyDataSetChanged()
-            Toast.makeText(this, "Vc clicou para criar um registro", Toast.LENGTH_SHORT).show()
-            adapter.notifyItemInserted(raceList.size - 1)
+            val intent = Intent(this, RaceAddActivity::class.java)
+            startActivity(intent)
         }
     }
 
