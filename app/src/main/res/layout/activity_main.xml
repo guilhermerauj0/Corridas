@@ -38,14 +38,87 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/cv_info_total"
+        app:layout_constraintTop_toBottomOf="@+id/main_action_bar"
+        android:backgroundTint="@color/blueescuro"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="start">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corridas"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/race_total_qtd"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerThickness="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="120dp"
+            app:dividerColor="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserratmedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:id="@+id/race_total_price"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_rv_race"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_action_bar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_info_total"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:itemCount="100"
         tools:listitem="@layout/race_info" />
 
@@ -65,60 +138,6 @@
             app:fabAlignmentMode="center"
             android:layout_gravity="bottom"
             android:backgroundTint="@color/white">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="60dp"
-                android:gravity="center"
-                android:layout_gravity="start">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Corridas"
-                    android:fontFamily="@font/montserratmedium"
-                    android:textColor="@color/blueprincipal"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2"
-                    android:id="@+id/race_total_qtd"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/montserratbold"
-                    android:textColor="@color/blueprincipal"/>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="end"
-                android:layout_marginRight="70dp"
-                android:layout_marginBottom="5dp"
-                android:gravity="center"
-                android:layout_marginLeft="100dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total"
-                    android:textColor="@color/blueprincipal"
-                    android:fontFamily="@font/montserratmedium"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="R$"
-                    android:id="@+id/race_total_price"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/montserratbold"
-                    android:textColor="@color/blueprincipal"/>
-            </LinearLayout>
-
-
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -126,6 +145,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/fab_add_race"
             android:src="@drawable/ic_baseline_add_24"
+            android:backgroundTint="@color/blueescuro"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="35dp"
             android:contentDescription="Criar Registro" />
