@@ -4,9 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.coldrosemob.corridas.R
 import com.coldrosemob.corridas.model.Race
 import com.coldrosemob.corridas.viewmodel.RaceAdapter
 import com.coldrosemob.corridas.databinding.ActivityMainBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,6 +61,13 @@ class MainActivity : AppCompatActivity() {
         binding.fabAddRace.setOnClickListener {
             val intent = Intent(this, RaceAddActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnInfoApp.setOnClickListener {
+            MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_Light)
+                .setTitle(resources.getString(R.string.info_app_title))
+                .setMessage(resources.getString(R.string.info_app))
+                .show()
         }
     }
 

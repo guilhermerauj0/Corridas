@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Corridas</string>
+
+    <string name="info_app">Este aplicativo foi feito para auxiliar na contagem de corridas
+    realizadas fora de aplicativos já convencionais.\nAplicativo ainda em construção, logo
+    poderá surgir bugs</string>
+    <string name="accept_dialog">OK</string>
+    <string name="info_app_title">Informações do App</string>
 </resources>

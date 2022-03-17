@@ -32,6 +32,8 @@
             android:layout_height="30dp"
             android:layout_marginRight="20dp"
             android:src="@drawable/ic_info"
+            android:id="@+id/btn_info_app"
+            android:focusable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +54,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
             android:gravity="center"
             android:layout_gravity="start">
 
