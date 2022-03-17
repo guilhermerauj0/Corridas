@@ -6,4 +6,8 @@
     poderá surgir bugs</string>
     <string name="accept_dialog">OK</string>
     <string name="info_app_title">Informações do App</string>
+    <string name="total_price_race">Total</string>
+    <string name="race_total">Corridas</string>
+    <string name="create_regist">Criar Registro</string>
+    <string name="title_app">Organize suas Corridas!</string>
 </resources>

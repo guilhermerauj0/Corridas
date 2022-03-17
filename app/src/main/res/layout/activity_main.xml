@@ -18,7 +18,7 @@
             android:id="@+id/main_tv_organize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Organize suas Corridas!"
+            android:text="@string/title_app"
             android:textSize="20sp"
             android:layout_marginStart="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Corridas"
+                android:text="@string/race_total"
                 android:textSize="16sp"
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/white"/>
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
+                tools:text="2"
                 android:id="@+id/race_total_qtd"
                 android:textSize="18sp"
                 android:fontFamily="@font/montserratbold"
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total"
+                android:text="@string/total_price_race"
                 android:textSize="16sp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/montserratmedium"/>
@@ -105,7 +105,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="R$"
+                tools:text="R$5.0"
                 android:id="@+id/race_total_price"
                 android:textSize="18sp"
                 android:fontFamily="@font/montserratbold"
@@ -151,7 +151,7 @@
             android:backgroundTint="@color/blueescuro"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="35dp"
-            android:contentDescription="Criar Registro" />
+            android:contentDescription="@string/create_regist" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
