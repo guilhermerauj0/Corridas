@@ -30,8 +30,6 @@ class RaceAdapter(private var raceList: List<Race>) : RecyclerView.Adapter<RaceA
 
         }
 
-
-
     }
 
     override fun getItemCount(): Int = raceList.size
