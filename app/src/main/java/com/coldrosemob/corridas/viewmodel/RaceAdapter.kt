@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.coldrosemob.corridas.model.Race
+import com.coldrosemob.corridas.data.Race
 import com.coldrosemob.corridas.databinding.RaceInfoBinding
 
 class RaceAdapter(private var raceList: List<Race>) : RecyclerView.Adapter<RaceAdapter.RaceViewHolder>() {
